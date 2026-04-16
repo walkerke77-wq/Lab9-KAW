@@ -1,7 +1,7 @@
 import fetch from 'node-fetch';
 
 async function getWeather() {
-    const url = 'https://api.open-meteo.com/v1/forecast?latitude=44.0247&longitude=-88.5426&current=temperature_2m,cloud_cover,wind_speed_10m,wind_speed_80m,wind_speed_120m,wind_speed_180m';
+    const url = 'https://api.open-meteo.com/v1/forecast?latitude=51.5074&longitude=-0.1278&current=temperature_2m,cloud_cover,wind_speed_10m,wind_speed_80m,wind_speed_120m,wind_speed_180m';
 
     let response = await fetch(url);
     let data = await response.json();
